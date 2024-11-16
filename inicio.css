@@ -1,0 +1,240 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5dc;
+}
+
+/* Estilo de Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eae7dc;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Sección de portada */
+.portada {
+    position: relative;
+    background-image: url('imagenes/presentacion.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portada h1 {
+    color: white;
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Sección de recetas destacadas */
+.seccion-recetas {
+    background-color: #f7e4c8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-recetas h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.recetas-destacadas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.tarjeta-receta {
+    width: 100%;
+    max-width: 250px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-receta:hover {
+    transform: scale(1.05);
+}
+
+.imagen-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.imagen-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ingredientes-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.imagen-container .ingredientes-overlay.mostrar {
+    opacity: 1;
+}
+
+.tarjeta-receta h3 {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+
+/* Formulario de búsqueda */
+.form-busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos */
+    margin-bottom: 20px;
+    margin-top: 20px; /* Espacio hacia abajo desde el borde superior */
+}
+
+.form-busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos */
+    margin-bottom: 20px;
+}
+
+.form-busqueda input {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: 2px solid #333; 
+    border-radius: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 250px; 
+    background-color: #f0f0f0; 
+    color: #333; 
+}
+
+.form-busqueda input:focus {
+    border-color: #555; 
+    box-shadow: 0 0 8px rgba(85, 85, 85, 0.4); 
+}
+
+.form-busqueda button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #2c3e50, #34495e); 
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-busqueda button:hover {
+    background: linear-gradient(135deg, #34495e, #2c3e50); 
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5); 
+    transform: translateY(-2px); 
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #eae7dc;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #b5651d;
+}
+
+.libro-reclamaciones {
+    width: 80px;
+    margin-top: 10px;
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Culinarias</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.JPG" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="lista.html">Lista de Compras</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>
+                <li><a href="Login.html">Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de portada principal -->
+    <section class="portada">
+        <h1>COMIDA</h1>
+    </section>
+
+    <!-- Formulario de búsqueda -->
+    <form id="busqueda-ingredientes" class="form-busqueda">
+        <input type="text" id="ingredientes" placeholder="Buscar por ingredientes" />
+        <button type="button" onclick="buscarRecetas()">Buscar</button>
+    </form>
+
+    <!-- Sección de las mejores recetas -->
+    <section class="seccion-recetas">
+        <h2>LAS MEJORES RECETAS</h2>
+        <div class="recetas-destacadas">
+            <!-- Primera fila -->
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/ceviche.JPG" alt="Ceviche">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Pescado fresco, limón, cebolla morada, ají limo, cilantro, camote, maíz chulpe.</p>
+                    </div>
+                </div>
+                <h3>Ceviche</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/lomo.JPG" alt="Lomo Saltado">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Carne de res, papas fritas, cebolla, tomate, salsa de soya, vinagre, ají amarillo.</p>
+                    </div>
+                </div>
+                <h3>Lomo Saltado</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/aji.jpg" alt="Ají de Gallina">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Pollo, ají amarillo, pan remojado, leche evaporada, queso fresco, nuez moscada.</p>
+                    </div>
+                </div>
+                <h3>Ají de Gallina</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/causa.JPG" alt="Causa Rellena">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Papa amarilla, ají amarillo, limón, pollo, mayonesa, huevo duro, aceitunas.</p>
+                    </div>
+                </div>
+                <h3>Causa Rellena</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/ham.JPG" alt="Hamburguesas">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Carne, papas, sal, cebolla, pan.</p>
+                    </div>
+                </div>
+                <h3>Hamburguesas</h3>
+            </div>
+    
+            <!-- Segunda fila -->
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/pescado.jpg" alt="Pescado a la Parrilla">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Corazón de res, ajo, ají panca, vinagre, papas, palitos de brocheta.</p>
+                    </div>
+                </div>
+                <h3>Pescado a la Parrilla</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/Pizza.JPG" alt="Pizza">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Arroz blanco, frijoles, cebolla, ajo, carne o huevo frito.</p>
+                    </div>
+                </div>
+                <h3>Pizza</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/chupe.jpg" alt="Chupe de Camarones">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Camarones, papa, maíz, leche evaporada, queso fresco, ají amarillo.</p>
+                    </div>
+                </div>
+                <h3>Chupe de Camarones</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/pisco.jpg" alt="Pisco Sour">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Pisco, jugo de limón, clara de huevo, azúcar, hielo, amargo de Angostura.</p>
+                    </div>
+                </div>
+                <h3>Pisco Sour</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/pollop.jpg" alt="Pollo a la Parrilla">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Cabrito, cebolla, ajo, ají amarillo, cilantro, chicha de jora.</p>
+                    </div>
+                </div>
+                <h3>Pollo a la Parrilla</h3>
+            </div>
+    
+            <!-- Tercera fila -->
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/arroz.jpg" alt="Arroz con Pollo">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Pollo, arroz, cilantro, arvejas, zanahorias, ají amarillo.</p>
+                    </div>
+                </div>
+                <h3>Arroz con Pollo</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/sopa.jpg" alt="Sopa a la Criolla">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Carne de res, fideos, papa, zanahoria, leche evaporada, ají amarillo.</p>
+                    </div>
+                </div>
+                <h3>Sopa a la Criolla</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/causa pollo.jpg" alt="Causa de Pollo o Atún">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Papa amarilla, limón, ají amarillo, pollo o atún, huevo duro, aceitunas.</p>
+                    </div>
+                </div>
+                <h3>Causa de Pollo o Atún</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/tamal.jpg" alt="Tamales Peruanos">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Masa de maíz, pollo o cerdo, aceitunas, pasas, especias, hojas de plátano.</p>
+                    </div>
+                </div>
+                <h3>Tamales Peruanos</h3>
+            </div>
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/papa.jpg" alt="Papa a la Huancaina">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Papas amarillas, ají amarillo, queso fresco, leche evaporada, huevo duro.</p>
+                    </div>
+                </div>
+                <h3>Papa a la Huancaina</h3>
+            </div>
+    
+            <!-- Cuarta fila -->
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/chicharron.jpg" alt="Chicharrón de Cerdo">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: Carne de cerdo, ajo, comino, jugo de naranja, camote, pan (opcional).</p>
+                    </div>
+                </div>
+                <h3>Chicharrón de Cerdo</h3>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-links">
+            <div class="footer-section">
+                <h3>Conócenos</h3>
+                <ul>
+                    <li><a href="#">Despachos</a></li>
+                    <li><a href="#">Información Legal</a></li>
+                    <li><a href="#">Términos y Condiciones de Uso</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes sociales</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Mi cuenta</h3>
+                <ul>
+                    <li><a href="#">Pedir</a></li>
+                    <li><a href="#">Iniciar sesión</a></li>
+                </ul>
+                <img src="imagenes/libro.JPG" alt="Libro de Reclamaciones" class="libro-reclamaciones">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="inicio.js"></script>
+</body>
+</html>
