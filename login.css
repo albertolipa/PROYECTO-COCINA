@@ -6,6 +6,34 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* Estilo de Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eae7dc;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
 body{
     background-image: url(imagenes/imglogin);
     background-size: cover;
