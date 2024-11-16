@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Culinarias</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.JPG" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="lista.html">Lista de Compras</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>
+                <li><a href="Login.html">Iniciar Sesion</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+
+    <!-- Sección de portada principal -->
+    <section class="portada">
+        <h1>COMIDA</h1>
+    </section>
+
+
+
+
+    <form id="busqueda-ingredientes" class="form-busqueda">
+        <input type="text" id="ingredientes" placeholder="Buscar por ingredientes" />
+        <button type="button" onclick="buscarRecetas()">Buscar</button>
+    </form>
+
+
+    
+    
+    <!-- Sección de las mejores recetas -->
+    <section class="seccion-recetas">
+        <h2>LAS MEJORES RECETAS</h2>
+
+
+        <div class="recetas-destacadas">
+            <div class="tarjeta-receta">
+                <div class="imagen-container" onclick="mostrarIngredientes(this)">
+                    <img src="imagenes/receta1.JPG" alt="Receta 1">
+                    <div class="ingredientes-overlay">
+                        <p>Ingredientes: queso, harina, huevo, azúcar, miel.</p>
+                    </div>
+                </div>
+                <h3>Pancakes de Avena</h3>
+                
+            </div>
+            
+            <!-- Repetir para las demás tarjetas de recetas -->
+       
+            
+            <!-- Repetir para las demás tarjetas de recetas -->
+        </div>
+        
+    </section>
+
+   <!-- Sección de Bollería artesanal -->
+<section class="seccion-bolleria">
+    <h2>Bollería artesanal</h2>
+    <div class="productos-bolleria">
+        <div class="tarjeta-producto">
+            <img src="imagenes/bolleria1.JPG" alt="Croix choconuces">
+            <div class="info-producto">
+                <h3>Croix choconuces</h3>
+                <p>Croissant relleno de crema de chocolate con nueces.</p>
+                <span>S/ 14.00</span>
+                <a href="#" class="btn-producto">Ver producto</a>
+            </div>
+        </div>
+        <div class="tarjeta-producto">
+            <img src="imagenes/bolleria2.JPG" alt="Cinnamon bun">
+            <div class="info-producto">
+                <h3>Cinnamon bun</h3>
+                <p>Trenza de pan brioche con pasta de canela con un glaseado.</p>
+                <span>S/ 10.00</span>
+                <a href="#" class="btn-producto">Ver producto</a>
+            </div>
+        </div>
+        <div class="tarjeta-producto">
+            <img src="imagenes/borreria3.JPG" alt="Croix de almendras">
+            <div class="info-producto">
+                <h3>Croix de almendras</h3>
+                <p>Croissant clásico relleno de crema de frangipán y almendras.</p>
+                <span>S/ 12.00</span>
+                <a href="#" class="btn-producto">Ver producto</a>
+            </div>
+        </div>
+        <div class="tarjeta-producto">
+            <img src="imagenes/bolleria4.JPG" alt="Croix de Limón">
+            <div class="info-producto">
+                <h3>Croix de Limón</h3>
+                <p>Croissant relleno de crema de limón con merengue italiano.</p>
+                <span>S/ 14.00</span>
+                <a href="#" class="btn-producto">Ver producto</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de Despensa -->
+<section class="seccion-despensa">
+    <h2>Despensa</h2>
+    <div class="productos-despensa">
+        <div class="tarjeta-producto">
+            <img src="imagenes/despensa1.JPG" alt="Mermelada casera de frutos rojos">
+            <div class="info-producto">
+                <h3>Mermelada casera de frutos rojos</h3>
+                <p>Hecho con fresas, arándanos, frambuesas y azúcar 100% natural. Peso: 300 gr.</p>
+                <span>S/ 13.00</span>
+                <a href="#" class="btn-producto">Ver producto</a>
+            </div>
+        </div>
+        <div class="tarjeta-producto">
+            <img src="imagenes/despensa2.JPG" alt="Miel de abeja">
+            <div class="info-producto">
+                <h3>Miel de abeja</h3>
+                <p>Miel de abeja 100% natural de Cuzco - Perú. Peso: 500 gr.</p>
+                <span>S/ 23.00</span>
+                <a href="#" class="btn-producto">Ver producto</a>
+            </div>
+        </div>
+        <div class="tarjeta-producto">
+            <img src="imagenes/despensa3.JPG" alt="Mermelada casera de piña, kiwi y romero">
+            <div class="info-producto">
+                <h3>Mermelada casera de piña, kiwi y romero</h3>
+                <p>Hecho con piña, kiwi, romero y azúcar 100% natural. Peso: 300 gr.</p>
+                <span>S/ 13.00</span>
+                <a href="#" class="btn-producto">Ver producto</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pie de página -->
+<footer>
+    <div class="footer-links">
+        <div class="footer-section">
+            <h3>Conócenos</h3>
+            <ul>
+                <li><a href="#">Despachos</a></li>
+                <li><a href="#">Información Legal</a></li>
+                <li><a href="#">Términos y Condiciones de Uso</a></li>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Política de Cookies</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Redes sociales</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Mi cuenta</h3>
+            <ul>
+                <li><a href="#">Pedir</a></li>
+                <li><a href="#">Iniciar sesión</a></li>
+            </ul>
+            <img src="imagenes/libro.JPG" alt="Libro de Reclamaciones" class="libro-reclamaciones">
+        </div>
+    </div>
+</footer>
+
+
+
+    <!-- Enlace al archivo JavaScript (opcional) -->
+    <script src="index.js"></script>
+</body>
+</html>

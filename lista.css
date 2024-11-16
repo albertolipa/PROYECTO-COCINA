@@ -1,0 +1,120 @@
+/* Sección de Lista de Compras */
+.seccion-lista-compras {
+    padding: 40px 20px;
+    background-color: #f7e4c8;
+    text-align: center;
+}
+
+.seccion-lista-compras h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.lista-compras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.producto-item {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    align-items: center;
+    gap: 20px;
+}
+
+.producto-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.info-producto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.info-producto h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cantidad button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #b5651d;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cantidad span {
+    font-size: 1em;
+}
+
+.precio {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-agregar {
+    padding: 8px 10px;
+    border: none;
+    background-color: #b5651d;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-agregar:hover {
+    background-color: #8c4a14;
+}
+
+
+
+/* Estilo de Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eae7dc;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}

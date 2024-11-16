@@ -1,0 +1,125 @@
+/* Sección de Tutoriales */
+.seccion-tutoriales {
+    padding: 40px 20px;
+    background-color: #f7e4c8;
+    text-align: center;
+}
+
+.seccion-tutoriales h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.tutorial-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.tutorial-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tutorial-item p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* Aspect ratio 16:9 */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #eae7dc;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #b5651d;
+}
+
+.libro-reclamaciones {
+    width: 80px;
+    margin-top: 10px;
+}
+
+/* Estilo de Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #eae7dc;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}

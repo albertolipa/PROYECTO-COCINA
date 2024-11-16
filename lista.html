@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="lista.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.JPG" alt="Logo" class="logo-img">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="lista.html">Lista de Compras</a></li>
+                <li><a href="tutoriales.html">Tutoriales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Lista de Compras -->
+    <main class="seccion-lista-compras">
+        <h2>Lista de Compras</h2>
+        <div class="lista-compras">
+            <div class="producto-item">
+                <img src="imagenes/carne.JPG" alt="Producto 1">
+                <div class="info-producto">
+                    <h3>Carne</h3>
+                    <p>Peso: 200 gr</p>
+                    <label>
+                        Escoge opción:
+                        <select>
+                            <option value="fresco">Fresco</option>
+                            <option value="congelado">Congelado</option>
+                        </select>
+                    </label>
+                    <input type="text" placeholder="Instrucciones especiales">
+                    <div class="cantidad">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <span class="precio">S/ 16.00</span>
+                    <button class="btn-agregar">Agregar</button>
+                </div>
+            </div>
+
+            <!-- Repetir el bloque de .producto-item para cada producto -->
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-links">
+            <!-- El pie de página aquí es opcional si deseas reutilizarlo -->
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript para funcionalidades de la lista de compras -->
+    <script src="lista.js"></script>
+</body>
+</html>
